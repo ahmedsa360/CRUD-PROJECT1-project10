@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>book</title>
+</head>
+<body>
+   <div class="container main-container">
+    <!-- start heading -->
+    <div class="main-heading">
+    <h1 class="  main-h1 py-2 position-relative ">Bookmarker</h1>
+   </div>
+   <!-- end heading -->
+
+   <!-- start content -->
+   <div class="content">
+    <i class="fa-solid fa-bookmark icon1"></i>
+     <h3 class="main-h3">Bookmark your favorite sites</h3>
+     <i class="fa-solid fa-bookmark icon2"></i>
+    </div>
+    <div class="alert1 alert-danger d-none">book exists</div>
+    <form >
+        <div class="name">
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <label for="name">sit name</label>
+            </div>
+            <input class="input-name" type="text" id="name" placeholder="    book name">
+        </div>
+
+        <div class="url">
+            <div>
+                <i class="fa-solid fa-link"></i>
+                <label for="url">sit url</label>
+            </div>
+            <input v class="input-url" type="text" id="url" placeholder="    website URL">
+        </div>
+        
+        <button type="button" class="btn main-button" onclick="AddBook()">Submit</button>
+    </form>
+   <!-- end content -->
+
+   <!-- start table -->
+       <table class="table">
+         <thead>
+            <tr>
+                <th>index</th>
+                <th>websitename</th>
+                <th>visit</th>
+                <th>delete</th>
+            </tr>
+         </thead>
+         <tbody id="tablebook">
+          
+         </tbody>
+       </table>
+   <!-- end table -->
+   </div>
+
+
+    <script src="./js/book.js"></script>
+</body>
+</html>
